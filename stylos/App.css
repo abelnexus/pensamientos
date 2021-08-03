@@ -1,0 +1,26 @@
+.success,
+.error {
+  color: white;
+  padding: 5px;
+  margin: 5px 0 15px 0;
+}
+
+.success {
+  background: rgb(66, 129, 224);
+}
+
+.error {
+  background: red;
+}
+.title {
+  text-align: center;
+  padding: 20px;
+  font-weight: 700;
+
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}

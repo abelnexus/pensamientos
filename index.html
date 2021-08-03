@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pensamientos</title>
+    <!-- Bootswatch Cosmo Theme -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="stylos/App.css" />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="title">
+      <a class="navbar-brand" style="color: white" href="#">Pensamientos</a>
+    </nav>
+
+    <div class="container">
+      <!-- APPLICATION -->
+      <div id="App" class="row pt-5">
+        <!-- FORM -->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">
+              <h4>Agregar Pensamiento</h4>
+            </div>
+            <form id="mind-form" class="card-body">
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="email"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="title"
+                  placeholder="Título"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="number"
+                  id="dni"
+                  class="form-control"
+                  placeholder="documento de identidad"
+                />
+              </div>
+              <div class="form-group">
+                <input type="date" id="date" value="" class="form-control" />
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  id="description"
+                  rows="3"
+                  placeholder="Descripción"
+                ></textarea>
+              </div>
+
+              <input
+                type="submit"
+                value="Guardar"
+                class="btn btn-primary btn-block"
+              />
+            </form>
+          </div>
+        </div>
+
+        <!-- PRODUCTS LIST -->
+        <div id="mind-list" class="col-md-8"></div>
+      </div>
+      <div>
+        <p>
+          Es un sistema que guarda pensamientos, en una constante, válida que
+          los campos no esten vacios, email debe tener el formato correcto y dni
+          debe tener 8 dígitos, si no pasa la validación muestra un mensaje de
+          error, esta desarrollado en javascript puro
+        </p>
+      </div>
+    </div>
+
+    <script src="js/App.js" type="module"></script>
+  </body>
+</html>
